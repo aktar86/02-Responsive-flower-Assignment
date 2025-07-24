@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* used google font css here*/
+.font-noto{
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.font-inter{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* shared style here */
+.display-flex{
+    display: flex;
+}
+.dark1{
+    color: #252432;
+}
+.gray{
+    color: #8987A1;
+}
+.primary-color{
+    color: #E95A08;
+}
+.section-title{
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.section-description{
+    font-size: 1.375rem;
+}
+
+.font-bold{
+    font-weight: bold;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.btn-primary{
+    background-color: #E95A08;
+    border: none;
+    color: #fff;
+    width: 100%;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+/* navbar style here */
+nav, main, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar >.logo{
+     /* width="135px" height="83" */
+    width: 135px;
+    height: 83px;
+    cursor: pointer;
+}
+
+.nav-item, .cart-item{
+    list-style: none;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 1rem;
+}
+.cart-item{
+        font-size: 1rem;
+        cursor: pointer;
+}
+/* banner style here */
+.banner{
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 100px;
+}
+.banner-text-container{
+    width: 570px;
+}
+section{
+    margin-top: 100px;
+}
+
+
+/* our plants section style here */
+.cart-section-container h3{
+    margin-bottom: 20px;
+}
+.cart-section-container p{
+    width: 888px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+.flowr-cart-container{
+    margin-top:50px;
+}
+.flower-cart img{
+    width: 100%;
+}
+
+
+/* cart Container style here */
+.flowr-cart-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+.flower-cart h5{
+    font-weight: 500;
+    font-size: 1.375rem;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    color: #111111;
+}
+.flower-cart h3{
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    font-size: 1.375rem;
+    margin-top: 20px;
+    color: #111111;
+}
+
+/* Flower and Plants Lover Style here */
+.store-container{
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.store-container > div{
+    flex: 1;
+}
+
+
+.image-section img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-section{
+    position: relative;
+
+}
+.image-section .badge{
+       width: 150px;
+}
+.badge{
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    animation: rotateBadge 10s linear infinite;
+}
+@keyframes rotateBadge {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+}
+
+
+
+
+.shop-text-list{
+    font-size:1.375rem ;
+}
+.shop-text-list li{
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:576px) {
+    .logo{
+        width: 63px;
+        height: 38px;
+    }
+    .nav-items{
+        display: none;
+    }
+
+    .banner{
+        flex-direction: column-reverse;
+    }
+
+    .banner-text-container{
+        width: 100%;
+    }
+    .cart-section-container p{
+        max-width: 100%;
+    }
+    .flowr-cart-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+    .store-container{
+        flex-direction: column;
+    }
+}
