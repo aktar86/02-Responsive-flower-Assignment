@@ -93,10 +93,10 @@ section{
 
 
 /* our plants section style here */
-.cart-section-container h3{
+.cart-section-container h3, .deals-container h3 {
     margin-bottom: 20px;
 }
-.cart-section-container p{
+.cart-section-container p, .deals-container p{
     width: 888px;
     margin: 0 auto;
     margin-top: 20px;
@@ -177,6 +177,72 @@ section{
     margin-bottom: 20px;
 }
 
+/* join/subscribe section here */
+/* .subscribe-section{
+    background-image: url('assets/news-letter-bg.png') ;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 533px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.subscribe-section {
+    background-image: url('assets/news-letter-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 533px; /* Original desktop height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+
+.overlay{
+    width: 75%;
+    padding: 40px;
+
+
+}
+.overlay h1{
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+.subscribe-form{
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-form input[type="email"]{
+    width: 50%;
+    padding: 10px;
+    border: none;
+}
+
+.subscribe-form button{
+    width: 20%;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    background-color: #E95A08;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* mobile responsive style here  */
 @media screen and (max-width:576px) {
     .logo{
         width: 63px;
@@ -209,5 +275,13 @@ section{
     }
     .shop-text-title{
         font-size: 2rem;
+    }
+
+    .overlay h1{
+        font-size: 1.3rem;  
+    }
+    .subscribe-section {
+        height: 393px; /* Your specified mobile height */
+        background-attachment: scroll; /* Better for mobile than fixed */
     }
 }
