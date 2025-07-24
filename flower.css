@@ -146,7 +146,7 @@ section{
 .image-section img{
     width: 100%;
     height: auto;
-    display: block;
+    /* display: block; */
 }
 
 .image-section{
@@ -203,5 +203,11 @@ section{
     }
     .store-container{
         flex-direction: column;
+    }
+    .badge{
+        display: none;
+    }
+    .shop-text-title{
+        font-size: 2rem;
     }
 }
