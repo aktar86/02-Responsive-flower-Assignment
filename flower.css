@@ -53,7 +53,7 @@
 }
 
 /* navbar style here */
-nav, main, .banner{
+nav, main, .banner, footer{
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -87,6 +87,9 @@ nav, main, .banner{
 .banner-text-container{
     width: 570px;
 }
+.banner-img img{
+    width: 100%;
+}
 section{
     margin-top: 100px;
 }
@@ -97,7 +100,7 @@ section{
     margin-bottom: 20px;
 }
 .cart-section-container p, .deals-container p{
-    width: 888px;
+    /* width: 888px; */
     margin: 0 auto;
     margin-top: 20px;
 }
@@ -238,9 +241,48 @@ section{
 }
 
 
+/* here is footer style */
+.footer{
+    margin-top: 100px;
+}
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr repeat(2, 1fr) 2fr;
+    gap: 24px;
+   
+}
 
 
+.footer-part {
+    padding: 10px;
+    cursor: pointer;
+}
 
+.footer-part > ul > li{
+    list-style: none;
+    /* margin-bottom: 15px; */
+        line-height: 60px;
+}
+
+.footer-part > ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:start ;
+    margin: 0;
+    padding: 0;
+}
+.social-icons{
+    justify-content: flex-end;
+    align-items: self-start;
+    align-content: center;
+    gap: 12px;
+    padding: 24px;
+}
+
+.social-icon img{
+    width: 100%;
+}
 
 /* mobile responsive style here  */
 @media screen and (max-width:576px) {
@@ -283,5 +325,15 @@ section{
     .subscribe-section {
         height: 393px; /* Your specified mobile height */
         background-attachment: scroll; /* Better for mobile than fixed */
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .social-icons{
+        justify-content: flex-start;
+        padding: 10px;
+
     }
 }
