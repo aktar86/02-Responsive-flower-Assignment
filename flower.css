@@ -299,7 +299,7 @@ section{
 }
 
 .subscribe-form button{
-    width: 30%;
+    width: 20%;
     border: none;
     padding: 10px;
     color: #fff;
@@ -409,6 +409,10 @@ section{
     .subscribe-section {
         height: 393px; /* Your specified mobile height */
         background-attachment: scroll; /* Better for mobile than fixed */
+    }
+
+    .subscribe-form button{
+      width: 30%;
     }
 
     .footer-container {
