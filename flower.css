@@ -429,6 +429,9 @@ section{
     .deal-content2{
         height: 30vh;
     }
+    .subscribe-form button {
+      width: 30% 
+    }
     .subscribe-section {
         height: 393px; /* Your specified mobile height */
         background-attachment: scroll; /* Better for mobile than fixed */
