@@ -284,6 +284,100 @@ section{
     width: 100%;
 }
 
+
+
+/* latest deal section */
+.deals-offer-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 24px;
+    margin-top: 50px;
+}
+
+.deal-1, .deal-2, .deal-3{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.shop-btn{
+    color: #fff;
+}
+
+.deal-content{
+    width: 40%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.deal-1, .deal-2{
+    height: 50%;
+}
+.deal-1{
+    background-image: url(./assets/deal-ana.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.deal-2 {
+    background-image: url(./assets/deal-bloom.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.deal-1::before, .deal-2::before, .deal-3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.deal-title, 
+.shop-btn {
+    color: #ffffff; /* Bright white */
+    z-index: 2;     /* Ensure it's above the ::before overlay */
+    position: relative;
+}
+
+
+.deal-3{
+    background-image: url(./assets/deal-zabo.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 15px;
+}
+
+
+.deal-content2{
+    width: 60%;
+    height: 60vh;
+}
+
+
+
+.deal-title{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+
+
+
 /* mobile responsive style here  */
 @media screen and (max-width:576px) {
     .logo{
@@ -321,6 +415,19 @@ section{
 
     .overlay h1{
         font-size: 1.3rem;  
+    }
+    .deals-offer-container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .deal-content, .deal-content2{
+        width: 100%;
+    }
+    .deal-1, .deal-2{
+        height: 100;
+    }
+    .deal-content2{
+        height: 30vh;
     }
     .subscribe-section {
         height: 393px; /* Your specified mobile height */
