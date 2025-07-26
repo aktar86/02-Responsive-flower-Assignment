@@ -319,6 +319,10 @@ section{
    
 }
 
+.footer-description{
+    font-size: 1rem;
+}
+
 
 .footer-part {
     padding: 10px;
@@ -409,6 +413,79 @@ section{
     .subscribe-section {
         height: 393px; /* Your specified mobile height */
         background-attachment: scroll; /* Better for mobile than fixed */
+    }
+
+    .subscribe-form button{
+      width: 30%;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .social-icons{
+        justify-content: flex-start;
+        padding: 10px;
+
+    }
+}
+
+
+/* mobile responsive style here  */
+@media screen and (min-width:576px) and (max-width:768px) {
+    .logo{
+        width: 63px;
+        height: 38px;
+    }
+    .nav-items{
+        display: none;
+    }
+
+    .banner{
+        flex-direction: column-reverse;
+    }
+
+    .banner-text-container{
+        width: 100%;
+    }
+    .cart-section-container p{
+        max-width: 100%;
+    }
+    .flowr-cart-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+    .store-container{
+        flex-direction: column;
+    }
+    .badge{
+        display: none;
+    }
+    .shop-text-title{
+        font-size: 2rem;
+    }
+
+    .overlay h1{
+        font-size: 1.3rem;  
+    }
+    .deals-offer-container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .deal-content, .deal-content2{
+        width: 100%;
+    }
+    .deal-1, .deal-2{
+        height: 100;
+    }
+    .deal-content2{
+        height: 30vh;
+    }
+
+    .subscribe-section {
+        height: 393px;
+        background-attachment: scroll
     }
 
     .subscribe-form button{
